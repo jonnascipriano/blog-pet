@@ -7,50 +7,135 @@
 
 header#hd-p{
     background-color: var(--header);
+    width: 100%;
+}
+
+header#hd-p nav{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 55px 40px 0px 40px;
+    padding: 55px 55px 0 40px;
 }
 
 header#hd-p nav div#logo-busque{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
 }
 
-header#hd-p nav div#logo-busque input#buscarnoblog{
-    width: 65%;
-    height: 7vh;
-    border-radius: 15px;
-    border: 1px solid var(--cor1);
+header#hd-p nav div#logo-busque input{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 650px;
+    height: 55px;
     font-size: 16px;
 }
 
-
 header#hd-p nav div#navbar ul{
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
     align-items: center;
-    font-weight: bold;
-
+    list-style: none;
+    margin: auto;
+    width: 80%;
 }
 
-header#hd-p nav div#navbar ul li{
-    display: flex;
-}
+/* header#hd-p nav div#navbar ul li{
+    text-align: center;
+} */
 
 header#hd-p nav div#navbar ul li a{
-    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+
+    height: 50px;
+
     text-decoration: none;
     color: black;
-
+    font-weight: bold;
 }
 
+main{
+    max-width: 800px;
+    margin: auto auto;
+}
 
+main img[src^="assets/img/cachorro"]{
+    width: 100%;
+    border-radius: 20px;
+    margin: 30px 0;
+}
 
+main header#ini{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main header#ini p#locsite{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 45px 0;
+    color: var(--cor1);
+    word-spacing: 10px;
+}
+
+main header#ini p#locsite a{
+    color: black;
+    text-decoration: none;
+}
+
+main header#ini p.bem-estar{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px 15px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+main header#ini h1{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+main header#ini div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+main header#ini div p{
+    color: var(--cor1);
+    padding: 5px;
+}
+
+main header#ini div p.data-pub{
+    font-weight: bold;
+}
+
+main header#ini div p.tempo-leit{
+    font-size: 15px;
+}
+
+main section{
+    line-height: 30px;
+    font-size: 18px;
+    margin: 100px 0;
+}
+
+main section h2{
+    padding: 45px 0;
+}
+
+main section p{
+    margin: 15px 0;
+}
 
