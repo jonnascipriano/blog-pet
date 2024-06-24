@@ -58,8 +58,8 @@ header#hd-p nav div#navbar ul li a{
     font-weight: bold;
 }
 
-main{
-    max-width: 800px;
+main#sist{
+    width: 800px;
     margin: auto auto;
 }
 
@@ -139,3 +139,129 @@ main section p{
     margin: 15px 0;
 }
 
+section#petz-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+section#petz-cont div.p-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 15px;
+    width: 50%;
+}
+
+section#petz-cont img{
+    width: 20px;
+}
+
+section#petz-cont div#cop-red{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+section#petz-cont div#cop-red button{
+    font-family: "Circular std Bold";
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+section#comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--header);
+    border-radius: 15px;
+    padding: 45px 0px;
+}
+
+section#comentario h3{
+    text-align: left;
+}
+
+section#comentario input#coment{
+    width: 450px;
+    margin: 30px;
+    padding: 15px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+section#comentario div input{
+    width: 200px;
+    padding: 15px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+
+section#comentario div.salvar-dados{
+    display: flex;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+section#comentario div.salvar-dados input{
+    width: 15px;
+}
+
+section#comentario button{
+    background-color: white;
+    width: 480px;
+    padding: 10px 10px;
+    background-color: rgb(236, 234, 234);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+section#comentario button img{
+    width: 15px;
+}
+
+section#mais-no-blog{
+    width: 90%;
+    margin: auto;
+}
+
+section#mais-no-blog div#caixas-mais{
+    display: flex;
+}
+
+section#mais-no-blog div.caixa{
+    border: 1px solid;
+    width: 450px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+section#mais-no-blog div.caixa img{
+    width: 450px;
+    border-radius: 100%;
+}
+
+section#mais-no-blog div.pitaya{
+    background-image: url(../assets/img/pitaya.jpg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
