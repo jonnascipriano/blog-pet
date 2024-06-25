@@ -245,23 +245,135 @@ section#mais-no-blog{
 
 section#mais-no-blog div#caixas-mais{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section#mais-no-blog div.caixa{
-    border: 1px solid;
-    width: 450px;
-    height: 350px;
+    position: absolute;
+    border: 1px solid #D5D5D5;
+    width: 350px;
+    height: 500px;
     border-radius: 15px;
+    overflow: hidden;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: 0 20px;
+    /* box-shadow: 1px 1px 1px gray; */
 }
 
 section#mais-no-blog div.caixa img{
+    position: relative;
     width: 450px;
-    border-radius: 100%;
+    border-radius: 50%;
+    top: -130px;
+    left: -50px;
+    margin-bottom: 10px;
+}
+
+section#mais-no-blog div.tex{
+    position: relative;
+    bottom: 120px;
+}
+
+section#mais-no-blog div.tags{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+section#mais-no-blog p.tag{
+    font-size: 13px;
+    padding: 0px 15px;
+    margin: 0 5px;
+    border: 1px solid;
+    border-radius: 50px; 
+}
+
+section#mais-no-blog p.dicas{
+    border: 2px solid;
+}
+
+section#mais-no-blog p.plantas{
+    border: none;
+    background-color: var(--tagplanta);
+}
+
+section#mais-no-blog p.aves{
+    border: none;
+    background-color: var(--tagaves);
 }
 
 section#mais-no-blog div.pitaya{
-    background-image: url(../assets/img/pitaya.jpg);
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
+    position: relative;
+    left: 0%;
+}
+
+
+section#mais-no-blog div.pleomele{
+    position: relative;
+    left: 0%;
+}
+
+section#mais-no-blog div.papagaio{
+    position: relative;
+    left: 0%;
+}
+
+section#mais-no-blog h3{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+section#mais-no-blog p.descricao{
+    font-size: 14px;
+    color: var(--cor1);
+}
+
+section#mais-no-blog p.data{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div#menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 150px;
+}
+
+footer div.lista-menu{
+    padding: 50px;
+}
+
+footer div.lista-menu h4{
+    padding-bottom: 20px;
+}
+
+footer div.lista-menu ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+footer div.lista-menu ul li a{
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}
+
+footer div#menu div#redes img{
+    width: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+footer div#copyright{
+    margin: 30px auto;
+    text-align: center;
+    font-size: 12px;
 }
